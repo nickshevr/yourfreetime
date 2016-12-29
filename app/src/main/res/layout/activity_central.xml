@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.andrey.yourfreetime.activities.CentralActivity"
+    android:background="#ff461a71">
+
+    <ImageView
+            android:id="@+id/upleft1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/upleft1"
+            android:layout_marginLeft="43dp"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="135dp"
+            android:onClick="clickadd" />
+
+        <ImageView
+            android:id="@+id/downleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/downleft"
+            android:layout_alignTop="@+id/downright"
+            android:layout_alignLeft="@+id/upleft1"
+            android:layout_alignStart="@+id/upleft1"
+            android:onClick="clickadvice" />
+
+        <ImageView
+            android:id="@+id/downright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/downright"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/upright"
+            android:layout_marginLeft="185dp" />
+
+        <ImageView
+            android:id="@+id/upright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/upright"
+            android:layout_gravity="center"
+            android:layout_alignTop="@+id/upleft1"
+            android:layout_alignRight="@+id/downright"
+            android:onClick="clickstatistic" />
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="95dp"
+        />
+    <ImageView
+        android:id="@+id/statistic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/statistic"
+        android:layout_gravity="center"
+        android:layout_alignTop="@+id/add"
+        android:layout_alignLeft="@+id/upright"
+        android:layout_alignStart="@+id/upright" />
+
+    <ImageView
+        android:id="@+id/advice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/advice"
+        android:layout_alignTop="@+id/downright"
+        android:layout_alignLeft="@+id/upleft1"
+        android:layout_alignStart="@+id/upleft1"
+        android:layout_marginTop="140dp"
+        />
+
+    <ImageView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rating"
+        android:layout_alignTop="@+id/advice"
+        android:layout_alignLeft="@+id/downright"
+        android:layout_alignStart="@+id/downright" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp" />
+
+</RelativeLayout>

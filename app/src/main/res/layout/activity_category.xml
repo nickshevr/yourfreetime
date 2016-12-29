@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.andrey.yourfreetime.activities.CategoryActivity"
+    android:background="#ff461a71">
+
+    <ImageView
+        android:id="@+id/health"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/health"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="125dp"
+        android:onClick="clickhealth" />
+
+    <ImageView
+        android:id="@+id/productivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/productivity"
+        android:layout_alignTop="@+id/relax"
+        android:layout_alignLeft="@+id/health"
+        android:layout_alignStart="@+id/health"
+        android:onClick="clickproductivity" />
+
+    <ImageView
+        android:id="@+id/relax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/relax"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/communicate"
+        android:layout_marginLeft="185dp"
+        android:onClick="clickrelax" />
+
+    <ImageView
+        android:id="@+id/communicate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/communicate"
+        android:layout_gravity="center"
+        android:layout_alignTop="@+id/health"
+        android:layout_alignRight="@+id/relax"
+        android:onClick="clickcommunicate" />
+
+    <ImageView
+        android:id="@+id/texthealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/texthealth"
+        android:layout_above="@+id/communicate"
+        android:layout_alignLeft="@+id/health"
+        android:layout_alignStart="@+id/health"
+        android:layout_marginBottom="10dp"
+        />
+    <ImageView
+        android:id="@+id/textcommunicate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/textcommunicate"
+        android:layout_gravity="center"
+        android:layout_alignTop="@+id/texthealth"
+        android:layout_alignLeft="@+id/communicate"
+        android:layout_alignStart="@+id/communicate" />
+
+    <ImageView
+        android:id="@+id/textproductivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/textproductivity"
+        android:layout_below="@+id/productivity"
+        android:layout_alignLeft="@+id/productivity"
+        android:layout_alignStart="@+id/productivity"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/textrelax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/textrelax"
+        android:layout_below="@+id/relax"
+        android:layout_alignLeft="@+id/relax"
+        android:layout_alignStart="@+id/relax"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        />
+
+</RelativeLayout>

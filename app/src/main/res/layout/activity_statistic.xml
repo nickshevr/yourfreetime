@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.andrey.yourfreetime.activities.StatisticActivitynull"
+    android:background="#ff461a71">
+
+    <ListView
+        android:id="@+id/lvSimple"
+        android:layout_width="330dp"
+        android:layout_height="400dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp">
+
+    </ListView>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        />
+
+    <ImageView
+        android:id="@+id/alldealsbig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alldealsbig"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/categorysmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/categorysmall"
+        android:onClick="clickcategory2" />
+
+    <ImageView
+        android:id="@+id/activesmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/activesmall"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="clickactivedeals" />
+
+</RelativeLayout>
